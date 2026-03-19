@@ -1,0 +1,26 @@
+{
+	"servers": {
+		"io.github.mapbox/mcp-server": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"--registry",
+				"https://registry.npmjs.org",
+				"@mapbox/mcp-server@99.0.0-dev"
+			],
+			"env": {
+				"MAPBOX_ACCESS_TOKEN": "${input:MAPBOX_ACCESS_TOKEN}"
+			},
+			"gallery": "https://api.mcp.github.com",
+			"version": "99.0.0-dev"
+		}
+	},
+	"inputs": [
+		{
+			"id": "MAPBOX_ACCESS_TOKEN",
+			"type": "promptString",
+			"description": "Your Mapbox access token",
+			"password": true
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "parking_slots",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "area_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "slot_number",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "parking_slots",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "last_updated",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "parking_areas",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "name",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
