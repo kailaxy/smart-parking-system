@@ -1,5 +1,23 @@
 {
   "projects": {
-    "default": "your-firebase-project-id"
+    "default": "your-firebase-project-id",
+    "staging": "your-firebase-staging-project-id",
+    "production": "your-firebase-project-id"
+  },
+  "targets": {
+    "your-firebase-project-id": {
+      "hosting": {
+        "admin-production": [
+          "your-firebase-project-id"
+        ]
+      }
+    },
+    "your-firebase-staging-project-id": {
+      "hosting": {
+        "admin-staging": [
+          "your-firebase-staging-project-id"
+        ]
+      }
+    }
   }
 }
